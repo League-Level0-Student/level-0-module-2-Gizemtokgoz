@@ -30,6 +30,7 @@ public class AnimalFarm {
 		} else if (answer.equals("llama")  ) {
 			playNoise(llama);
 		} 
+
 		/* 2. Make it so that the user can keep entering new animals. */
 	}
 
