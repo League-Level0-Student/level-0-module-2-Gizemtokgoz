@@ -18,7 +18,7 @@ int SOE = 100;
     
     void mousePressed() {
       //5. Create an integer variable called distance
-  int distance = (400, 400, int x2, int y2)
+  int distance = getDistance(X, Y, mouseX, mouseY);
       //6. Set the value of the distance variable to the value returned by the getDistance method
       //   Pass the mouse's x and y (mouseX and mouseY) and the x and y of your ellipse to the method.
         
@@ -26,7 +26,10 @@ int SOE = 100;
       //7.  Use an if statement to check if the distance variable is < the radius of the ellipse
       //    If it is, set a new x and y for the ellipse, using a random location on the window
       //    Hint: Use the Processing random() function       
-      
+   if (distance<50){
+   X=(int)random(700);
+   Y=(int)random(700);
+   }
     }
     
     int getDistance (int x1, int y1, int x2, int y2) {
